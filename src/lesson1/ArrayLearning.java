@@ -9,9 +9,9 @@ public class ArrayLearning {
         int numOdd = 0;
         for (int elementIndex = 0; elementIndex < myIntArr.length; elementIndex++) {
             if(myIntArr[elementIndex] % 2 == 0){
-                numEven = numEven + 1;
+                numEven++;
             }else{
-                numOdd = numOdd +1;
+                numOdd++;
             }
         }
         System.out.println("number of even: " + numEven);
@@ -29,7 +29,7 @@ public class ArrayLearning {
         //3. Average value
         int totalNum = 0;
         for (int index = 0; index < myIntArr.length; index++) {
-            totalNum = totalNum + myIntArr[index];
+            totalNum += myIntArr[index];
         }
         double averageNum = (double) totalNum / myIntArr.length;
         System.out.println("Average number is: " + averageNum);
@@ -50,10 +50,10 @@ public class ArrayLearning {
 
         //5. 3! = 1 * 2 * 3
         int x = 5;
-        int resultX = 1;
+        int facNum = 1;
         for (int index1 = 1; index1 <= x; index1++) {
-            resultX = index1 * resultX;
+            facNum = index1 * facNum;
         }
-        System.out.printf("Factorial of " + x + " is: " + resultX);
+        System.out.printf("Factorial of " + x + " is: " + facNum);
     }
 }
