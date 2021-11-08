@@ -12,6 +12,7 @@ public class Lab03 {
         inputPassword(myPassword);
         extractNumberFromString(myStrWithNumber);
         checkURL(myStr);
+        
     }
 
     private static void extractNumberFromString(String myStrWithNumber) {
